@@ -1,68 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&displ=swap');
-
-*{
-    margin: 0%;
-    padding: 0%;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(47, 88%, 63%);
+  height: 100vh;
+  font-family: "Figtree", sans-serif;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(228, 203, 18);
-    height: 100vh;
-    font-family: "Figtree";
-    
+.card-container {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.targeta{
-    border: 2px solid black;
-    background: white;
-    width: 330px;
-    border-radius: 17px;
-    padding: 30px;
-    box-shadow: 10px 10px 0px black
+.blog-card {
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 8px 8px 0 black;
+  transition: box-shadow 0.3s ease;
 }
 
-.cabeza img {
-    border-radius: 8px;
-    width: 100%;
+.blog-card:hover {
+  box-shadow: 12px 12px 0 black;
 }
 
-.estado {
-    margin-top: 22px;
-    margin-bottom: 18px;
+.card-image img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.estado button{
-    background: rgb(244, 219, 26);
-    border-radius: 4px;
-    border: 5px;
-    padding: 7px;
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.fecha-publicacion{
-    margin-bottom: 20px;
+.card-tag {
+  margin: 20px 0 15px;
 }
 
-.titulo{
-    font-size: 20px;
-    margin-bottom: 20px;
+.card-tag span {
+  background: hsl(47, 88%, 63%);
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 14px;
 }
 
-.descripcion {
-    font-size: 19px;
-    margin-bottom: 35px;
-    line-height: 25px;
-    
+.card-date {
+  font-size: 14px;
+  color: hsl(0, 0%, 50%);
+  margin-bottom: 15px;
 }
 
-.user{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.card-title {
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
-.user img {
-    height: 35px;  
+.card-title:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.card-description {
+  font-size: 16px;
+  color: hsl(0, 0%, 50%);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-author img {
+  width: 35px;
+  height: 35px;
+}
+
+.card-author p {
+  font-weight: 800;
+  font-size: 14px;
 }
