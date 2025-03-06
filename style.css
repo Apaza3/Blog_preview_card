@@ -30,14 +30,6 @@ body {
   border-radius: 10px;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .card-tag {
   margin: 20px 0 15px;
 }
@@ -87,4 +79,12 @@ body {
 .card-author p {
   font-weight: 800;
   font-size: 14px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
